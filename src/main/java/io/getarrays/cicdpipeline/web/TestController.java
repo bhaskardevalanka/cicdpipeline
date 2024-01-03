@@ -22,7 +22,7 @@ public class TestController {
 
     @GetMapping
     public ResponseEntity<Map<String, String>> healthcheck() {
-        return ResponseEntity.ok().body(Map.of("Status", "Up"));
+        return ResponseEntity.ok().body(Map.of("Application", "Running"));
     }
 
     @GetMapping("/test")
