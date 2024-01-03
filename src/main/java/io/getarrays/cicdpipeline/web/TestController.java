@@ -22,11 +22,11 @@ public class TestController {
 
     @GetMapping
     public ResponseEntity<Map<String, String>> healthcheck() {
-        return ResponseEntity.ok().body(Map.of("Status", "Up"));
+        return ResponseEntity.ok().body(Map.of("Application Up and Running"));
     }
 
     @GetMapping("/test")
     public ResponseEntity<Map<String, String>> test() {
-        return ResponseEntity.ok().body(Map.of("Testing", "Test Data"));
+        return ResponseEntity.ok().body(Map.of("Testing Completed"));
     }
 }
